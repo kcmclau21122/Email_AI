@@ -1,0 +1,21 @@
+# Core dependencies
+python-docx>=0.8.11
+streamlit>=1.28.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Email processing
+PyPDF2>=3.0.0
+
+# Vector database and embeddings
+chromadb>=0.4.18
+sentence-transformers>=2.2.0
+
+# Ollama (no specific package needed - uses REST API via requests)
+# Make sure to install Ollama separately from: https://ollama.ai/
+
+# Optional: Enhanced PDF processing
+# pdfplumber>=0.10.0
+
+# Note: For GPU support, also install from requirements-gpu-cu121.txt
+# using: pip install -r requirements-gpu-cu121.txt --extra-index-url https://download.pytorch.org/whl/cu121

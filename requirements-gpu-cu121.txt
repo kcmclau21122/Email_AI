@@ -1,0 +1,18 @@
+# Requirements for GPU support with CUDA 12.1+
+# Use this if you have CUDA 12.1 or newer
+
+# Core dependencies
+python-docx
+streamlit
+openai
+requests
+python-dotenv
+
+# PyTorch with CUDA 12.1 support
+# Install with: pip install -r requirements-gpu-cu121.txt --extra-index-url https://download.pytorch.org/whl/cu121
+torch
+torchvision
+torchaudio
+
+# Note: Ollama handles its own GPU acceleration automatically
+# No additional Python packages needed for Ollama GPU support

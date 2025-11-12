@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Email filtering configuration for Email AI Assistant",
+  "version": "1.0",
+  "filters": {
+    "ignore_senders": {
+      "description": "List of sender email addresses or domains to ignore",
+      "enabled": true,
+      "addresses": [
+        "consumer_at_e_mail_realtor_com_kmw2q47csj_3552a78a@privaterelay.appleid.com",
+        "nnewsletter_at_wretched_org_hekgibnkf@passmail.net",
+        "no-reply@email.simplisafe.com",
+        "no-reply@info.simplisafe.com",
+        "E-tradeAlerts-DoNotReply@etrade.com",
+        "noreply@info.idprotectiononline.com"
+      ],
+      "domains": [
+        "landsend.com",
+        "discoursemail.com",
+        "experian.com",
+        "papajohns.com",
+        "thirdstage-consulting.com",
+        "citi.com",
+        "usps.com",
+        "amazon.com",
+        "sphsurvey.com",
+        "persecution.org",
+        "bge.com",
+        "ebay.com",
+        "netflix.com",
+        "mystore.com",
+        "alpaca.markets",
+        "starz.com",
+        "kohls.com",
+        "driveezmd.com",
+        "nintendo.net",
+        "qgiv.net"
+      ]
+    },
+    "ignore_sender_names": {
+      "description": "List of sender names to ignore (case-insensitive partial match)",
+      "enabled": true,
+      "names": [
+        "Newsletter",
+        "Marketing Team"
+      ]
+    },
+    "ignore_subjects": {
+      "description": "List of subject keywords to ignore (case-insensitive partial match)",
+      "enabled": false,
+      "keywords": [
+        "unsubscribe",
+        "newsletter",
+        "promotional",
+        "Your alerts are waiting for you"
+      ]
+    },
+    "ignore_label_ids": {
+      "description": "ProtonMail label IDs to ignore (e.g., spam, trash)",
+      "enabled": false,
+      "label_ids": [
+        "4",
+        "8"
+      ]
+    },
+    "require_attachments": {
+      "description": "Only process emails with attachments",
+      "enabled": false
+    },
+    "date_range": {
+      "description": "Only process emails within date range (Unix timestamps)",
+      "enabled": false,
+      "start_date": null,
+      "end_date": null
+    }
+  },
+  "whitelist": {
+    "description": "Whitelist overrides all filters - these emails will always be processed",
+    "enabled": false,
+    "sender_addresses": [
+      "important@example.com"
+    ],
+    "sender_domains": [
+      "company.com"
+    ]
+  },
+  "statistics": {
+    "description": "Track filtering statistics",
+    "log_filtered_emails": true,
+    "create_filter_report": true
+  }
+}
